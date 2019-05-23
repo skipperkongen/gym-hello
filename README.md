@@ -1,4 +1,4 @@
-A very simple template for OpenAI Gym environments
+A minimal template for OpenAI Gym environments
 
 ## Installation
 
