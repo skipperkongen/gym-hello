@@ -1,4 +1,4 @@
-A minimal template for OpenAI Gym environments
+A minimal template for OpenAI Gym environments.
 
 ## Installation
 
@@ -29,7 +29,7 @@ while not done:
 
 ## The Environment
 
-The environment just implements the right interface with amount minimal code.
+The environment just implements the right interface with the minimal amount of code possible (well almost).
 - the environment terminates after three steps
 - the state is the number of steps left before termination
 - there are two possible actions: 0 and 1.
