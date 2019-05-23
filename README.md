@@ -17,9 +17,20 @@ import gym
 import gym_hello
 
 env = gym.make('Hello-v0')
+env.reset()
+
+done = False
+while not done:
+    action = env.action_space.sample()
+    state, reward, done, _ = env.step(action)
+    print(state, reward, done)
 ```
 
 
 ## The Environment
 
-The environment implements the right interface with amount minimal code.
+The environment just implements the right interface with amount minimal code.
+- there are two possible actions, 0 and 1
+- the environment terminates after three steps
+- the state is the number of steps left before termination
+- the reward is -1 per step, except for the last step where it is 100
