@@ -30,7 +30,7 @@ while not done:
 ## The Environment
 
 The environment just implements the right interface with amount minimal code.
-- there are two possible actions, 0 and 1
 - the environment terminates after three steps
 - the state is the number of steps left before termination
-- the reward is -1 per step, except for the last step where it is 100
+- there are two possible actions: 0 and 1.
+- the reward is -1 per step, except for the last step where it is 100. The action makes no difference.
